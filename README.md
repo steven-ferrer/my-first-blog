@@ -6,7 +6,7 @@ Check out the site here:
 
 It's live now.
 
-You can add most here:
+You can add post here:
 
   http://stevenferrer.pythonanywhere.com/admin/
 
