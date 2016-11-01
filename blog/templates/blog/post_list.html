@@ -11,6 +11,7 @@
             <h2><a>{{ post.title }}</a></h2>
             <p>{{ post.published_date }}</p>
             <p>{{ post.text|linebreaksbr }}</p>
+            <p><strong><i>{{ post.author.username }}</i></strong></p>
         <div>
     {% endfor %}
 </body>
