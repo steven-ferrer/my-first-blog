@@ -6,15 +6,12 @@
     <div>
         <h1><a href="">Django Girls Blog App</a></h1>
     </div>
-    <div>
-        <h2><a href="">My second post</a></h2>
-        <p>published: 01.11.2016, 20:19</p>
-        <p>Django is the awesomest Web Framework for Python. I am learning it so that I could develop cool web apps in the future. </p>
-    </div>
-    <div>
-        <h2><a href="">My first post</a></h2>
-        <p>published: 31.10.2016, 01:32</p>
-        <p>Django girls tutorial is the coolest Django tutorial I have ever red. I am able to develop this blog site because of Django girls. Cheers!<p>
-    </div>
+    {% for post in posts %}
+        <div>
+            <h2><a>{{ post.title }}</a></h2>
+            <p>{{ post.published_date }}</p>
+            <p>{{ post.text|linebreaksbr }}</p>
+        <div>
+    {% endfor %}
 </body>
 </html>
